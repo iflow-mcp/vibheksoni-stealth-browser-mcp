@@ -33,11 +33,6 @@ dev = [
     "mypy==1.0.0",
 ]
 
-# Optional dependencies for advanced features
-optional = [
-    "py2js @ git+https://github.com/am230/py2js.git@31a83c7c25a51ab0cc3255f484a2279d26278ec3",
-]
-
 # Repository metadata
 [project.urls]
 Homepage = "https://github.com/vibheksoni/stealth-browser-mcp"
