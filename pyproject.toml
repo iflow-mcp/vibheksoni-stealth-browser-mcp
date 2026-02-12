@@ -9,6 +9,9 @@ authors = [
     {name = "Vibhek Soni", email = "vibheksoni@engineer.com"},
 ]
 
+[project.scripts]
+stealth-browser-mcp = "main:main"
+
 # Runtime dependencies
 dependencies = [
     "fastmcp==2.11.2",
