@@ -8,11 +8,6 @@ license = {text = "MIT"}
 authors = [
     {name = "Vibhek Soni", email = "vibheksoni@engineer.com"},
 ]
-
-[project.scripts]
-stealth-browser-mcp = "main:main"
-
-# Runtime dependencies
 dependencies = [
     "fastmcp==2.11.2",
     "nodriver==0.47.0",
@@ -25,8 +20,8 @@ dependencies = [
     "pillow==11.3.0",
     "uvicorn[standard]==0.35.0",
 ]
-
-# Development dependencies (optional)
+[project.scripts]
+stealth-browser-mcp = "main:main"
 [project.optional-dependencies]
 dev = [
     "pytest>=7.0.0",
@@ -35,15 +30,12 @@ dev = [
     "isort>=5.12.0",
     "mypy==1.0.0",
 ]
-
-# Repository metadata
 [project.urls]
 Homepage = "https://github.com/vibheksoni/stealth-browser-mcp"
 Documentation = "https://github.com/vibheksoni/stealth-browser-mcp#readme"
 Repository = "https://github.com/vibheksoni/stealth-browser-mcp.git"
 Issues = "https://github.com/vibheksoni/stealth-browser-mcp/issues"
 
-# Code formatting
 [tool.black]
 line-length = 100
 target-version = ["py310", "py311", "py312", "py313"]

@@ -3,7 +3,8 @@
 # Import and run the server module
 from server import *
 
-if __name__ == "__main__":
+def main():
+    """Main entry point for the stealth-browser-mcp server."""
     import sys
     import argparse
 
@@ -102,3 +103,6 @@ if __name__ == "__main__":
         mcp.run(transport="http", host=args.host, port=args.port)
     else:
         mcp.run(transport="stdio")
+
+if __name__ == "__main__":
+    main()
